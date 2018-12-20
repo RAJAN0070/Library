@@ -5,40 +5,55 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="32dp"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
     tools:context="com.example.nikhilreddy.library.MainActivity">
 
-    <TextView
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="120dp"
+        android:src="@drawable/vnrvjietlogo"
+        android:layout_margin="48dp"/>
+
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="20sp"
-        android:hint="Email Id" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="#a9a9a9"/>
+        android:singleLine="true"
+        android:inputType="textCapCharacters"
+        android:hint="College Id" />
 
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:singleLine="true"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
+        android:inputType="textPassword"
         android:hint="Password" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="#a9a9a9"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:text="LOGIN"
-        android:textColor="#FFFFFF"
         android:textSize="20sp"
+        android:textColor="#FFFFFF"
         android:background="#f26a58" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:text="Forgot password?"
+        android:background="#00000000"
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -49,15 +64,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Don't have an account ?"
+            android:text="Don't have an account?  "
             android:textSize="16sp"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="   Signup"
+            android:id="@+id/.signupbutton"
+            android:text="@string/signup"
             android:textSize="16sp"
-            android:gravity="left|center"
+            android:minWidth="50dp"
             android:textAllCaps="false"
             android:background="#00000000" />
     </LinearLayout>
